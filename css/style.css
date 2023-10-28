@@ -1,0 +1,1507 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MontserratMedium";
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "PlayRegular";
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "PlayBold";
+  src: url(../fonts/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+  font-family: "PlaySemiBold";
+  src: url(../fonts/PlayfairDisplay-SemiBold.ttf);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 30px;
+  height: 940px;
+  background-image: url(../img/bgimg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "MontserratMedium";
+  color: #ffffff;
+}
+
+.adrnum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+}
+
+header h1 {
+  display: none;
+}
+
+header h2 {
+  font-size: 16px;
+}
+
+header p {
+  font-size: 16px;
+}
+
+header ul a {
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+nav {
+  margin: 80px auto;
+  padding: 15px 10px;
+  max-width: 1050px;
+  font-size: 17px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+nav a:hover {
+  opacity: 0.6;
+  transition: all 0.4s ease;
+  /* transform: scale(1.1); */
+}
+
+.buttons {
+  max-width: 450px;
+  height: 50px;
+  margin: 590px auto;
+}
+
+.btn1 {
+  width: 155px;
+  height: 50px;
+  padding: 15px 30px;
+  background-color: #99862a;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.btn1:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.btn2 {
+  width: 155px;
+  height: 50px;
+  background-color: #99862a;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.btn2:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.black {
+  max-width: 100%;
+  height: 700px;
+  background-color: #282828;
+  padding: 94px 320px;
+}
+
+.box {
+  text-align: center;
+  max-width: 800px;
+  height: 520px;
+  border: 3px solid #ffffff;
+  background-color: #282828;
+}
+
+.box h2 {
+  margin-top: 50px;
+  position: relative;
+  color: #ffffff;
+  font-size: 36px;
+  font-family: PlaySemiBold;
+  padding-bottom: 32px;
+}
+
+.box h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+  width: 20%;
+  height: 1px;
+  margin-left: -30%;
+  background: #ffffff;
+}
+
+.box p {
+  max-width: 620px;
+  height: 120px;
+  margin: 30px auto 0 auto;
+  font-family: MontserratMedium;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 19.5px;
+  margin-bottom: 40px;
+}
+
+.white {
+  width: 100%;
+  height: 960px;
+  background-color: #e6e3c4;
+  padding: 94px 326px;
+}
+
+.box-2 {
+  position: relative;
+  max-width: 800px;
+  height: 780px;
+  border-top: 1px solid #99862a;
+  border-bottom: 1px solid #99862a;
+}
+
+.collection {
+  margin: 47px 0 0 0;
+  font-family: MontserratMedium;
+  font-size: 16px;
+}
+
+.right-content h2 {
+  position: relative;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: PlayBold;
+  margin-top: 30px;
+  padding-bottom: 18px;
+}
+
+.right-content h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 30%;
+  height: 1px;
+  margin-left: -30%;
+  background: #282828;
+}
+
+.right-content .lorem {
+  margin-top: 20px;
+  max-width: 408px;
+  height: 120px;
+  font-family: MontserratMedium;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-wine {
+  position: relative;
+  margin-top: 10px;
+  width: 276px;
+  font-family: PlayBold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.about-wine:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 120%;
+  height: 1px;
+  margin-left: -30%;
+  background: #282828;
+}
+
+.about-wine-end {
+  margin-top: 10px;
+  width: 276px;
+  font-family: PlayBold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.learn-more {
+  font-family: MontserratMedium;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+  width: 174px;
+  height: 48px;
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: #99862a;
+}
+
+.learn-more:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.slider {
+  margin-left: 20px;
+  max-width: 330px;
+  height: 460px;
+  overflow: hidden;
+}
+
+.middle {
+  position: absolute;
+  top: 8%;
+  left: 56%;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+
+.bar {
+  width: 30px;
+  height: 8px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ffffff;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.bar:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+footer {
+  padding: 10px 0 0 0;
+  height: 175px;
+  background-color: #99862a;
+}
+
+footer ul {
+  width: 740px;
+  height: 20px;
+  margin: 40px auto 0 auto;
+  padding: 20px 30px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+footer li a {
+  font-family: MontserratMedium;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+footer li a:hover {
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+.footnav {
+  margin: 0 auto;
+  max-width: 740px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff;
+}
+
+footer p {
+  height: 34px;
+  font-family: MontserratMedium;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 0 0 0;
+}
+
+footer .dot {
+  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.social {
+  margin: 0 0 0 80px;
+  display: flex;
+  align-items: flex-start;
+  width: 190px;
+  height: 34px;
+}
+
+.social p {
+  padding: 5px 0 0 0;
+  margin-right: 30px;
+}
+
+.social p:last-child {
+  margin-right: 0;
+}
+
+.social a {
+  padding: 5px;
+}
+
+.social img {
+  width: 34px;
+  height: 34px;
+}
+
+.social img:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* --------------DELIVERY--------- */
+
+.content {
+  width: 100%;
+  height: 800px;
+  padding: 60px 290px;
+  background-color: #e6e3c4;
+}
+
+.box-form {
+  position: relative;
+  display: flex;
+  width: 900px;
+  height: 680px;
+  border: 2px solid #282828;
+}
+
+.delivery-form {
+  width: 500px;
+  height: 510px;
+  margin: 100px 0 0 62px;
+}
+
+.delivery-form input {
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0, 0.3%);
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  margin-right: 50px;
+  margin-top: 70px;
+}
+
+.delivery-form input:nth-child(-n + 2) {
+  margin-top: 0;
+}
+
+.long {
+  position: relative;
+  width: 390px;
+  border-bottom: none;
+}
+
+.delivery-form textarea {
+  margin-top: 30px;
+  width: 390px;
+  height: 115px;
+  background-color: rgb(0, 0, 0, 0.3%);
+  outline: none;
+  resize: none;
+  border-color: #000000;
+}
+
+.delivery-img {
+  width: 220px;
+  height: 580px;
+  margin-top: 54px;
+}
+
+.pack-img {
+  width: 184px;
+  height: 164px;
+  /* margin-bottom: 70px; */
+}
+
+.app-img {
+  width: 186px;
+  height: 186px;
+  margin-top: 92px;
+}
+
+input[type="submit"] {
+  width: 218px;
+  height: 60px;
+  margin-top: 44px;
+  padding: 10px 15px;
+  background-color: #99862a;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* -----------CATALOG -----------*/
+
+.product-wrapper {
+  height: 2100px;
+  background-color: #282828;
+  padding-top: 100px;
+}
+
+.product-wrapper h2 {
+  text-align: center;
+  width: 180px;
+  height: 44px;
+  font-family: PlaySemiBold;
+  font-size: 36px;
+  color: #ffffff;
+  margin: auto;
+}
+
+.catalog-wine {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: PlaySemiBold;
+  max-width: 1010px;
+  height: 1600px;
+  margin: 118px auto;
+}
+
+.item {
+  margin-bottom: 40px;
+}
+
+.item h3 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.item p {
+  height: 30px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.item a {
+  text-align: center;
+  display: block;
+  padding: 15px;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: #99862a;
+  color: #ffffff;
+}
+
+.item a:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+/* --------CONTACT --------*/
+
+.about-wrapper {
+  display: flex;
+  height: 700px;
+}
+
+.left-bk {
+  width: 50%;
+  height: 700px;
+  background-color: #282828;
+}
+
+.left-bk-text {
+  margin: 50px 26px;
+  font-family: MontserratMedium;
+  font-size: 32px;
+  color: #ffffff;
+  width: 324px;
+  height: 236px;
+}
+.left-bk-text-2 {
+  margin-top: 192px;
+  font-family: MontserratMedium;
+  font-size: 20px;
+  color: #ffffff;
+  width: 442px;
+  height: 190px;
+}
+
+.right-wh {
+  width: 50%;
+  height: 700px;
+  background-color: #e6e3c4;
+}
+
+.right-wh-text {
+  width: 400px;
+  height: 610px;
+  margin: 54px auto;
+  text-align: center;
+}
+
+.right-wh-text p {
+  font-family: MontserratMedium;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.right-wh-text .quests {
+  margin-bottom: 150px;
+}
+
+.right-wh-text .send-quests {
+  margin-bottom: 80px;
+}
+
+.arrow-down {
+  width: 176px;
+  height: 176px;
+  align-items: center;
+}
+
+.messenger-btn {
+  display: block;
+  width: 240px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #282828;
+  font-family: MontserratMedium;
+  font-size: 24px;
+  padding: 15px 36px;
+  margin: 60px auto 0 auto;
+}
+
+.messenger-btn:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.messenger-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+
+.messenger-bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.messenger {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 525px;
+  height: 500px;
+  padding: 66px 58px;
+  background-color: #e6e3c4;
+  transform: translate(-50%, -50%);
+}
+
+.messenger.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+.messenger p {
+  color: #282828;
+  text-transform: uppercase;
+}
+
+.messenger img {
+  width: 34px;
+  height: 34px;
+}
+
+.close-messenger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.close-messenger:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.form {
+  width: 410px;
+  height: 442px;
+  margin-top: 60px;
+}
+
+.form input {
+  background-color: rgba(0, 0, 0, 0.3%);
+  border: none;
+  outline: none;
+  width: 180px;
+  margin-left: 0px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #282828;
+}
+
+#tel {
+  margin-right: 0;
+}
+
+.form input[type="email"] {
+  margin-bottom: 0;
+  margin-right: 0;
+  width: 400px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3%);
+  color: #000000;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #282828;
+}
+
+.form textarea {
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 400px;
+  height: 150px;
+  background-color: rgb(0, 0, 0, 0.3%);
+  outline: none;
+  resize: none;
+  border-color: #000000;
+}
+
+.form input[type="submit"] {
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: 30px;
+  margin-right: 0;
+  width: 240px;
+  height: 60px;
+  background-color: #282828;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: MontserratMedium;
+  font-size: 20px;
+}
+
+/* ---------DEGUSTATION----- */
+
+.sign-up-wrapper {
+  position: relative;
+  width: 100%;
+  height: 608px;
+  background-color: #282828;
+  padding: 115px 304px;
+}
+
+.sign-up-wrapper img {
+  z-index: 2;
+}
+
+.grape {
+  position: absolute;
+  top: 50px;
+  left: 290px;
+}
+
+.sign-up-wrapper h2 {
+  position: absolute;
+  background-color: #282828;
+  top: 86px;
+  left: 560px;
+  font-family: PlayBold;
+  font-size: 36px;
+  width: 360px;
+  height: 50px;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.sign-up-wrapper h2::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 65%;
+  width: 30%;
+  height: 1px;
+  margin-left: -37%;
+  background: #ffffff;
+}
+
+.barrel {
+  position: absolute;
+  top: 80px;
+  right: 260px;
+}
+
+.sign-up {
+  width: 830px;
+  height: 378px;
+  border: 1px solid #ffffff;
+}
+
+.sign-up p {
+  font-family: MontserratMedium;
+  font-size: 16px;
+  text-align: center;
+  width: 394px;
+  height: 108px;
+  margin: 80px auto 0 auto;
+  color: #ffffff;
+}
+
+.sign-up-form {
+  width: 400px;
+  height: 150px;
+  margin: 10px auto;
+}
+
+.sign-up-form input {
+  font-family: MontserratMedium;
+  margin-bottom: 20px;
+  width: 186px;
+  height: 20px;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.3%);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.sign-up-form input[type="number"] {
+  margin-right: 0;
+}
+
+.sign-up-form input[type="email"] {
+  width: 396px;
+  margin-bottom: 0;
+}
+
+.sign-up-form input[type="submit"] {
+  cursor: pointer;
+  font-family: MontserratMedium;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 40px;
+  border: none;
+  padding: 8px auto;
+  border: 1px solid #ffffff;
+  width: 100%;
+  height: 40px;
+  background-color: #282828;
+  color: #ffffff;
+}
+
+.sign-up-form input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #282828;
+}
+
+/* --------RESPONSIVE 1024------- */
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 30px;
+    height: 718px;
+  }
+
+  .buttons {
+    max-width: 450px;
+    height: 50px;
+    margin: 400px auto;
+  }
+
+  .black {
+    padding: 90px 160px;
+  }
+
+  .box {
+    width: 700px;
+    height: 520px;
+  }
+
+  .white {
+    height: 950px;
+    padding: 60px 160px;
+  }
+
+  .box-2 {
+    display: block;
+    width: 700px;
+    height: 820px;
+  }
+
+  .right-content {
+    width: 350px;
+  }
+
+  .right-content .lorem {
+    margin-top: 20px;
+    height: 150px;
+  }
+
+  .about-wine {
+    margin-right: 0;
+  }
+
+  .about-wine:after {
+    width: 100%;
+  }
+
+  .slider {
+    margin-right: 0;
+    width: 500px;
+    height: 460px;
+    overflow: hidden;
+  }
+
+  .middle {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+  }
+
+  .content {
+    width: 100%;
+    height: 800px;
+    padding: 60px 112px;
+  }
+
+  .box-form {
+    position: relative;
+    /* display: flex; */
+    width: 800px;
+    height: 680px;
+    border: 2px solid #282828;
+  }
+
+  .product-wrapper {
+    height: 2000px;
+    background-color: #282828;
+    padding-top: 50px;
+  }
+
+  .messenger {
+    width: 525px;
+    height: 500px;
+  }
+
+  .sign-up-wrapper {
+    height: 560px;
+    padding: 115px 112px;
+  }
+
+  .grape {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+
+  .sign-up-wrapper h2 {
+    position: absolute;
+    background-color: #282828;
+    top: 90px;
+    left: 350px;
+    font-family: PlayBold;
+    font-size: 36px;
+    width: 360px;
+    height: 50px;
+    z-index: 3;
+    color: #ffffff;
+  }
+
+  .barrel {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+  }
+}
+
+/* --------RESPONSIVE 390------- */
+@media only screen and (max-width: 390px) {
+  header {
+    height: 260px;
+  }
+
+  nav {
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+
+  .buttons {
+    max-width: 450px;
+    height: 30px;
+    margin: 30px auto;
+  }
+
+  .black {
+    max-width: 100%;
+    height: 300px;
+    background-color: #282828;
+    padding: 20px 60px;
+  }
+
+  .box {
+    width: 270px;
+    height: 250px;
+    border: 2px solid #ffffff;
+  }
+
+  .box h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  .box p {
+    width: 240px;
+    height: 150px;
+    margin: 0 auto 10px auto;
+    font-size: 8px;
+  }
+
+  .box img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .white {
+    max-width: 100%;
+    height: 780px;
+    padding: 30px 60px;
+  }
+  .box-2 {
+    width: 270px;
+    height: 720px;
+  }
+
+  .right-content {
+    width: 250px;
+  }
+
+  .collection {
+    width: 125px;
+    margin: 47px auto 0 0;
+    font-family: MontserratMedium;
+    font-size: 12px;
+  }
+
+  .right-content h2 {
+    width: 125px;
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: PlayBold;
+    margin-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .right-content h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+    width: 30%;
+    height: 1px;
+    margin-left: -30%;
+    background: #282828;
+  }
+
+  .right-content .lorem {
+    margin-top: 10px;
+    width: 125px;
+    height: 150px;
+    font-family: MontserratMedium;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .about-wine {
+    position: relative;
+    margin-top: 10px;
+    width: 125px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .about-wine:after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+    width: 100%;
+    height: 1px;
+    margin-left: -30%;
+    background: #282828;
+  }
+
+  .about-wine-end {
+    margin-top: 10px;
+    width: 125px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .slider {
+    margin-left: 20px;
+    max-width: 125px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .middle {
+    left: 46%;
+  }
+
+  .bar {
+    width: 20px;
+  }
+
+  footer {
+    padding: 0;
+    height: 60px;
+    background-color: #99862a;
+  }
+
+  footer ul {
+    justify-content: space-around;
+    width: 390px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  footer li a {
+    font-family: MontserratMedium;
+    font-size: 8px;
+    color: #ffffff;
+  }
+
+  .footnav {
+    margin: 10px auto 0 auto;
+    max-width: 390px;
+    height: 20px;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .footnav p {
+    width: 80px;
+    height: 20px;
+    font-family: MontserratMedium;
+    font-size: 8px;
+    color: #ffffff;
+    padding: 0;
+  }
+
+  footer .dot {
+    width: 80px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .social {
+    margin: 0;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 26px;
+  }
+
+  .social p {
+    margin: 0 auto;
+    padding: 0 6px 12px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 16px;
+    height: 26px;
+    margin-right: 20px;
+  }
+
+  .social p:last-child {
+    margin-right: 0;
+  }
+
+  .social a {
+    padding: 0;
+  }
+
+  .social img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .content {
+    height: 600px;
+    padding: 100px 60px;
+  }
+
+  .box-form {
+    width: 270px;
+    height: 400px;
+  }
+
+  .delivery-form {
+    width: 200px;
+    height: 300px;
+    margin: 30px 0 0 0;
+  }
+
+  .delivery-form input {
+    width: 80px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .delivery-form input:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+
+  .delivery-form textarea {
+    margin-top: 30px;
+    width: 200px;
+    height: 115px;
+  }
+
+  .delivery-img {
+    width: 66px;
+    height: 400px;
+    margin-top: 10px;
+  }
+
+  .pack-img {
+    width: 60px;
+    height: 68px;
+  }
+
+  .app-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+  }
+
+  input[type="submit"] {
+    width: 60px;
+    height: 40px;
+    margin: 88px auto 0 auto;
+    padding: 0;
+    font-size: 8px;
+  }
+
+  .product-wrapper {
+    height: 5600px;
+    background-color: #282828;
+    padding-top: 100px;
+  }
+
+  .about-wrapper {
+    display: flex;
+    height: 600px;
+  }
+
+  .left-bk {
+    width: 50%;
+    height: 600px;
+    background-color: #282828;
+  }
+
+  .left-bk-text {
+    font-size: 12px;
+    margin: 170px 26px 0 26px;
+    width: 125px;
+    height: 80px;
+  }
+
+  .left-bk-text-2 {
+    margin-top: 60px;
+    font-size: 12px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .right-wh {
+    height: 600px;
+  }
+
+  .right-wh-text {
+    width: 150px;
+    height: 100px;
+    margin: 170px auto;
+  }
+
+  .right-wh-text p {
+    font-size: 12px;
+  }
+
+  .right-wh-text .quests {
+    margin-bottom: 50px;
+  }
+
+  .right-wh-text .send-quests {
+    margin-bottom: 50px;
+  }
+
+  .arrow-down {
+    width: 100px;
+    height: 100px;
+  }
+
+  .messenger-btn {
+    display: block;
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #282828;
+    font-family: MontserratMedium;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 50px auto 0 auto;
+  }
+
+  .messenger {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 250px;
+    padding: 34px 46px;
+    background-color: #e6e3c4;
+    transform: translate(-50%, -50%);
+  }
+
+  .messenger p {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  .messenger img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .close-messenger {
+    top: 10px;
+    right: 10px;
+  }
+
+  .form {
+    width: 250px;
+    height: 442px;
+    margin-top: 0;
+  }
+
+  .form input {
+    width: 100px;
+    margin-left: 0;
+    margin-right: 44px;
+    margin-bottom: 4px;
+  }
+
+  #tel {
+    margin-right: 0;
+  }
+
+  .form input[type="email"] {
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 250px;
+    height: 20px;
+  }
+
+  .form textarea {
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 250px;
+    height: 50px;
+  }
+
+  .form input[type="submit"] {
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-right: 0;
+    width: 250px;
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+  /* DEGUSTATION 390 */
+  .sign-up-wrapper {
+    position: relative;
+    width: 100%;
+    height: 608px;
+    background-color: #282828;
+    padding: 115px 50px;
+  }
+
+  .sign-up-wrapper img {
+    z-index: 2;
+  }
+
+  .grape {
+    width: 100px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+  }
+
+  .sign-up-wrapper h2 {
+    position: absolute;
+    background-color: #282828;
+    top: 108px;
+    left: 164px;
+    font-family: PlayBold;
+    font-size: 12px;
+    width: 120px;
+    height: 30px;
+    z-index: 3;
+    color: #ffffff;
+  }
+
+  .sign-up-wrapper h2::after {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 65%;
+    width: 30%;
+    height: 1px;
+    margin-left: -37%;
+    background: #ffffff;
+  }
+
+  .barrel {
+    width: 90px;
+    position: absolute;
+    top: 100px;
+    right: 8px;
+  }
+
+  .sign-up {
+    width: 300px;
+    height: 378px;
+    border: 1px solid #ffffff;
+  }
+
+  .sign-up p {
+    font-family: MontserratMedium;
+    font-size: 16px;
+    text-align: center;
+    width: 300px;
+    height: 108px;
+    margin: 60px auto 0 auto;
+    color: #ffffff;
+  }
+
+  .sign-up-form {
+    width: 250px;
+    height: 150px;
+    /* background-color: #ffffff; */
+    margin: 10px auto;
+  }
+
+  .sign-up-form input {
+    margin-bottom: 20px;
+    width: 80px;
+    height: 20px;
+    margin-right: 84px;
+  }
+
+  .sign-up-form input[type="number"] {
+    margin-right: 0;
+  }
+
+  .sign-up-form input[type="email"] {
+    width: 250px;
+    margin-bottom: 0;
+  }
+
+  .sign-up-form input[type="submit"] {
+    cursor: pointer;
+    font-family: MontserratMedium;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 40px;
+    border: none;
+    padding: 8px auto;
+    border: 1px solid #ffffff;
+    width: 100%;
+    height: 40px;
+    background-color: #282828;
+    color: #ffffff;
+  }
+}
